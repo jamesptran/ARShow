@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F27625DE38DB4AECFA6869C /* Pods_ARShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD18A0360A2ED6B5ADEDB5D /* Pods_ARShow.framework */; };
 		75D185EE1FCD2672006953F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D185ED1FCD2672006953F9 /* AppDelegate.swift */; };
-		75D185F01FCD2672006953F9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D185EF1FCD2672006953F9 /* art.scnassets */; };
 		75D185F21FCD2672006953F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D185F11FCD2672006953F9 /* ViewController.swift */; };
 		75D185F51FCD2672006953F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D185F31FCD2672006953F9 /* Main.storyboard */; };
 		75D185F71FCD2672006953F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D185F61FCD2672006953F9 /* Assets.xcassets */; };
 		75D185FA1FCD2672006953F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D185F81FCD2672006953F9 /* LaunchScreen.storyboard */; };
 		75D186051FCD2672006953F9 /* ARShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D186041FCD2672006953F9 /* ARShowTests.swift */; };
 		75D186101FCD2672006953F9 /* ARShowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1860F1FCD2672006953F9 /* ARShowUITests.swift */; };
+		75D1861E1FCD26C8006953F9 /* SolarCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1861D1FCD26C8006953F9 /* SolarCalculator.swift */; };
+		75D186201FCD26D9006953F9 /* DataDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1861F1FCD26D9006953F9 /* DataDef.swift */; };
+		75D186221FCD275F006953F9 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D186211FCD275F006953F9 /* Models.scnassets */; };
+		75D186241FCD2B59006953F9 /* tron-albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D186231FCD2B59006953F9 /* tron-albedo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BD18A0360A2ED6B5ADEDB5D /* Pods_ARShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D185EA1FCD2672006953F9 /* ARShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D185ED1FCD2672006953F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75D185EF1FCD2672006953F9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		75D185F11FCD2672006953F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75D185F41FCD2672006953F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75D185F61FCD2672006953F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		75D1860B1FCD2672006953F9 /* ARShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D1860F1FCD2672006953F9 /* ARShowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARShowUITests.swift; sourceTree = "<group>"; };
 		75D186111FCD2672006953F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75D1861D1FCD26C8006953F9 /* SolarCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCalculator.swift; sourceTree = "<group>"; };
+		75D1861F1FCD26D9006953F9 /* DataDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDef.swift; sourceTree = "<group>"; };
+		75D186211FCD275F006953F9 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		75D186231FCD2B59006953F9 /* tron-albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tron-albedo.png"; sourceTree = "<group>"; };
+		97EE4F66839CE8484F074189 /* Pods-ARShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARShow/Pods-ARShow.release.xcconfig"; sourceTree = "<group>"; };
+		B031588E610E580FA5B03599 /* Pods-ARShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARShow/Pods-ARShow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F27625DE38DB4AECFA6869C /* Pods_ARShow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19633E7494D8A191F9DAAE56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BD18A0360A2ED6B5ADEDB5D /* Pods_ARShow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75D185E11FCD2672006953F9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,8 @@
 				75D186031FCD2672006953F9 /* ARShowTests */,
 				75D1860E1FCD2672006953F9 /* ARShowUITests */,
 				75D185EB1FCD2672006953F9 /* Products */,
+				9DB6B7274E2441A179584CDE /* Pods */,
+				19633E7494D8A191F9DAAE56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				75D185ED1FCD2672006953F9 /* AppDelegate.swift */,
-				75D185EF1FCD2672006953F9 /* art.scnassets */,
 				75D185F11FCD2672006953F9 /* ViewController.swift */,
+				75D186231FCD2B59006953F9 /* tron-albedo.png */,
+				75D1861D1FCD26C8006953F9 /* SolarCalculator.swift */,
+				75D1861F1FCD26D9006953F9 /* DataDef.swift */,
+				75D186211FCD275F006953F9 /* Models.scnassets */,
 				75D185F31FCD2672006953F9 /* Main.storyboard */,
 				75D185F61FCD2672006953F9 /* Assets.xcassets */,
 				75D185F81FCD2672006953F9 /* LaunchScreen.storyboard */,
@@ -128,6 +152,15 @@
 			path = ARShowUITests;
 			sourceTree = "<group>";
 		};
+		9DB6B7274E2441A179584CDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B031588E610E580FA5B03599 /* Pods-ARShow.debug.xcconfig */,
+				97EE4F66839CE8484F074189 /* Pods-ARShow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75D186141FCD2672006953F9 /* Build configuration list for PBXNativeTarget "ARShow" */;
 			buildPhases = (
+				C495B5614798C2FBA4D89324 /* [CP] Check Pods Manifest.lock */,
 				75D185E61FCD2672006953F9 /* Sources */,
 				75D185E71FCD2672006953F9 /* Frameworks */,
 				75D185E81FCD2672006953F9 /* Resources */,
+				14D35255E607ECCDCCD0F897 /* [CP] Embed Pods Frameworks */,
+				A9A7191EC5D010ECDA481E64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,8 +271,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D185F01FCD2672006953F9 /* art.scnassets in Resources */,
 				75D185FA1FCD2672006953F9 /* LaunchScreen.storyboard in Resources */,
+				75D186241FCD2B59006953F9 /* tron-albedo.png in Resources */,
+				75D186221FCD275F006953F9 /* Models.scnassets in Resources */,
 				75D185F71FCD2672006953F9 /* Assets.xcassets in Resources */,
 				75D185F51FCD2672006953F9 /* Main.storyboard in Resources */,
 			);
@@ -258,12 +295,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14D35255E607ECCDCCD0F897 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARShow/Pods-ARShow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARShow/Pods-ARShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A7191EC5D010ECDA481E64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARShow/Pods-ARShow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C495B5614798C2FBA4D89324 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARShow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75D185E61FCD2672006953F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				75D185F21FCD2672006953F9 /* ViewController.swift in Sources */,
+				75D186201FCD26D9006953F9 /* DataDef.swift in Sources */,
+				75D1861E1FCD26C8006953F9 /* SolarCalculator.swift in Sources */,
 				75D185EE1FCD2672006953F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +521,7 @@
 		};
 		75D186151FCD2672006953F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B031588E610E580FA5B03599 /* Pods-ARShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +537,7 @@
 		};
 		75D186161FCD2672006953F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97EE4F66839CE8484F074189 /* Pods-ARShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
