@@ -1,0 +1,21 @@
+{
+  "Mac" : [
+    {
+      "name" : "AssimpKit",
+      "hash" : "624f39b6b237f9eb9341cc6b2d9e33d3ca87e891ab975e9348d626add0bd08fc"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v1.2.0",
+  "iOS" : [
+    {
+      "name" : "AssimpKit",
+      "hash" : "b80bb507d1faaffc6448f276ef44c2c71a3a80df01179b3561221b44d5c9feb4"
+    }
+  ]
+}
