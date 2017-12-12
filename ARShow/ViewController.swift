@@ -60,14 +60,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ARSCNViewDele
         
         self.sceneView.delegate = self
         
-        // Change debug options for featurePoints and worldOrigin
-        //        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
-        
-        
-        //        let env : UIImage = UIImage(named: "./Models.scnassets/sharedImages/spherical.jpg")!
-        //        self.sceneView.scene.lightingEnvironment.contents = env;
-        
-        
         sunLightSource.type = .directional
         sunLightSource.shadowMode = .forward
         sunLightSource.castsShadow = true
@@ -79,11 +71,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ARSCNViewDele
         
         self.sceneView.scene.rootNode.addChildNode(sunLightNode)
         startTimer()
-        
-        self.objectScene = SCNScene(named: "Building.scn", inDirectory: "Models.scnassets/Building5")!
     }
     
-    var y = 0
     func updateSun() {
         sunLightNode.removeFromParentNode()
         
@@ -96,13 +85,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ARSCNViewDele
         newSolarCalculator.day = calendar.component(.day, from: date)
         newSolarCalculator.month = calendar.component(.month, from: date)
         newSolarCalculator.year = calendar.component(.year, from: date)
-        newSolarCalculator.latitude = 37.090240
-            //Double(currentLatitude)
-        newSolarCalculator.longitude = -95.712891
-            //Double(currentLongitute)
+        newSolarCalculator.latitude = Double(currentLatitude)
+        newSolarCalculator.longitude = Double(currentLongitute)
         newSolarCalculator.timezone = Double(timezone)
         newSolarCalculator.hour = calendar.component(.hour, from: date)
-            //calendar.component(.hour, from: date)
         newSolarCalculator.minute = calendar.component(.minute, from: date)
         newSolarCalculator.second = Double(calendar.component(.second, from: date))
         newSolarCalculator.elevation = 0
@@ -180,33 +166,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ARSCNViewDele
     }
         
     
-    func sessionSimpleDownload(urlString: String) {
+    func getObjectFromUrl(urlString: String) {
         let url = URL(string: urlString)
-        
         do {
             self.objectScene = try SCNScene(url: url!, options: [.overrideAssetURLs: false])
-            
-//            for child in getAllChild(ofNode: objectScene.rootNode) {
-//                if child.geometry == nil {
-//                    print("Child \(String(describing: child.name)) has no geometry")
-//                }
-//
-//                if child.geometry?.firstMaterial == nil {
-//                    print("Child \(String(describing: child.name)) has no material")
-//                } else {
-//                    print("Child \(String(describing: child.name)) has a material!!!!")
-//                }
-//
-//                if child.name != "plane" {
-//                    print("Child \(String(describing: child.name)) is not a plane!")
-//                    child.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "chair_DIFFUSE.png")
-//                    child.geometry?.firstMaterial?.metalness.contents = UIImage(named: "chair_METALLIC.png")
-//                    child.geometry?.firstMaterial?.normal.contents = UIImage(named: "chair_NORMAL.png")
-//                    child.geometry?.firstMaterial?.roughness.contents = UIImage(named: "chair_ROUGHNESS.png")
-//                }
-//
-//            }
-            
         } catch {
             print("Error getting objects")
         }
@@ -219,11 +182,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ARSCNViewDele
         currentLongitute = locValue.longitude
     }
     
-    func randomFloat(min: Float, max: Float) -> Float {
-        return (Float(arc4random()) / 0xFFFFFFFF) * (max - min) + min
-    }
-    
-
     func insertDirectionalLight(position: SCNVector3) {
         let directionalLight : SCNLight = SCNLight()
         directionalLight.type = SCNLight.LightType.directional
@@ -257,11 +215,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ARSCNViewDele
         cc.z = cameraCoordinates.translation.z
         
         return cc
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func selectCandle(_ sender: Any) {
@@ -355,7 +308,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ARSCNViewDele
     }
     
     func receiveObject(object: String) {
-        sessionSimpleDownload(urlString: "http://hopper.cluster.earlham.edu:4848/static/" + object)
+        getObjectFromUrl(urlString: "http://hopper.cluster.earlham.edu:4848/static/" + object)
     }
 }
 
