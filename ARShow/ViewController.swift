@@ -297,9 +297,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ARSCNViewDele
             let objectNode = SCNNode()
             objectNode.position = SCNVector3(x, y, z)
             
-//            guard let virtualObjectScene = SCNScene(named: "chair.scn", inDirectory: "Models.scnassets/chair") else {
-//                return
-//            }
             let virtualObjectScene = self.objectScene
             
             let wrapperNode = SCNNode()
