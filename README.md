@@ -1,6 +1,6 @@
 ## Utilizing cloud storage for realistic augmented reality on mobile.
 ### Introduction
-This is the Senior Project of my Computer Science major in Earlham College, named Utilizing cloud storage for realistic augmented reality on mobile.
+This is the Senior Project of my Computer Science major in Earlham College. The senior project revolves around utilizing augmented reality on mobile with great emphasis on realism. Furthermore, the project also utilizes cloud storage to see how the performance of the rendering drop when rendering through cloud versus through local storage.
 
 ### Abstract
 As for today, augmented reality technologies are shifting towards small devices with a focus on user interaction. As more techniques in rendering AR objects are developed, more computing powers are needed to keep up. Mobile AR technology has all functions built in, in addition to GPS and compass for realistic AR rendering technology. However, mobile devices lack storage and the raw power for 3D rendering of complex objects. The paper discusses the possibility of integrating cloud to fix these problems, and conclude that using cloud for performance is difficult while using cloud for storage is possible. Results show that performance drop when utilizing cloud storage for 3D objects are minimal. As for now, cloud fetched objects are rendered without textures, leading to a reduce in realism compared to local fetched objects. Thus, the next step of the pro ject is implementing textures fetch from cloud DB on top of the 3D object file fetch.
